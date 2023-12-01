@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Yemek Tarifleri</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    width: 80%;
+  }
+  /* footer'da başka image vermek istedim ancak olmadı, footer dediğimde resimi cover'layamadım.*/
+  .jumbotron {
+    background-image: url(meal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+ h1 {
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(226, 221, 221);
+ }
+ .jumbotron p {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+ }
+
+/* image'leri yan yana getirdim flex 1 ile*/
+.col-sm-4 {
+  flex: 1;
+  margin-left: 10%;
+}
+.container-center {
+    background-color: rgb(240, 229, 212);
+    /* background-color: rgb(190, 97, 97); */
+}
+.container-center p {
+    font-size: 18px;
+    margin-left: 21%; /* text-align: center dediğimde ortalanmadı neden ?*/
+    font-weight: 600;
+    color: rgb(28, 42, 190);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2 {
+    margin-left: 15%; /* text-align: center dediğimde ortalanmadı neden ?*/
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(119, 20, 20);
+}
+h4 {
+    color: rgb(11, 124, 29);
+    font-size: 22px;
+    font-weight: 600;
+    font-family: cursive;
+}
+h6 {
+    color: rgb(16, 168, 42);
+    font-size: 17px;
+    font-weight: 600;
+    font-family: cursive;
+}
+h5 {
+    color: rgb(224, 148, 7);
+    font-size: 19px;
+    font-weight: 600;
+    font-family: cursive;
+}
+ul, ol {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+}
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0" >
+  <h1>Yemek Tarifleri</h1>
+  <p>Artık yemek yaparken zorlanmayacaksınız</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">
+    <img src="https://www.karaca.com/blog/wp-content/uploads/2023/10/domates-soslu-makarna-2.webp" style="width: 50px; height: 50px; border-radius: 100%;" alt="">
+    Makarna
+</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+    <img src="https://i.lezzet.com.tr/images-xxlarge-secondary/18-essiz-ve-saglikli-sebze-aceaa54e-b1f2-4e7a-b147-4d7396cb21ae.jpg" style="width: 50px; height: 50px; border-radius: 100%;" alt="">
+            Sebze</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+    <img src="https://cdn.yemek.com/mncrop/620/388/uploads/2023/02/borek-sunum-elif.jpg" style="width: 50px; height: 50px; border-radius: 100%;" alt="">
+            Börek</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+    <img src="https://ideacdn.net/idea/hh/43/myassets/blogs/iftar-icin-yapilabilecek-corba-tarifleri-4444444.jpg?revision=1649327600" style="width: 50px; height: 50px; border-radius: 100%;" alt="">
+            Çorba</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+<div class="container-center" >
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Domatesli Makarna</h2>
+      <div class="fakeimg" style="background-image: url(domatesliMakarna.jpg); background-size: cover;"></div>
+      <p>Günü kurtarıcı bir tarif!</p>
+      <h4>Domatesli Makarna Tarifi İçin Malzemeler</h4>
+      <ul><li>1/2 paket makarna</li>
+        <li>2 adet domates</li>
+        <li>1 diş sarımsak</li>
+        <li>3 yemek kaşığı zeytinyağı</li>
+        <li>1 tatlı kaşığı domates salçası</li>
+        <li>1 çay kaşığı kekik</li>
+        <li>1/2 çay kaşığı karabiber</li>
+        <li>1 çay kaşığı tuz</li></ul>
+      <h6>Üzeri için:</h6>
+      <ul><li>50 gram kaşar peyniri</li></ul>
+      <h5>Domatesli Makarna Tarifi Nasıl Yapılır? </h5>
+      <ol>
+        <li>Kaynamış su içine makarnayı ekleyip 10 dakika kadar pişene kadar haşlıyoruz.</li>
+        <li>Tavaya zeytinyağını ekleyip rendelenmiş domatesi ekleyip suyunu çekip kıvam alana kadar 1-2 dakika kadar pişiriyoruz. </li>
+        <li>Ezilmiş sarımsağı, kekiği, karabiberi ve tuzunu ekleyip karıştırıyoruz.</li>
+        <li>Haşlanmış makarnaları domates sosu ile buluşturuyoruz.</li>
+        <li>Sosun her yerine geçmesi için makarnaları güzelce karıştırıyoruz.</li>
+        <li>İsterseniz üzerine rendelenmiş kaşar peyniri ekleyebilirsiniz. Afiyet olsun... :)</li>
+      </ol>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-4" style="margin-left: 5%;">
+        <h2>Kıymalı Makarna</h2>
+        <div class="fakeimg" style="background-image: url(kiymaliMakarna.jpg); background-size: cover;"></div>
+        <p>Doyurucu ve pratik!</p>
+        <h4>Kıymalı Makarna Tarifi İçin Malzemeler</h4>
+      <ul><li>1/2 paket spagetti(250 g)</li>
+        <li>2 yemek kaşığı zeytinyağı</li>
+        <li>300 gram orta yağlı kıyma</li>
+        <li>1 adet kuru soğan</li>
+        <li>1 diş sarımsak</li>
+        <li>1 yemek kaşığı domates salçası</li>
+        <li>1 su bardağı domates püresi (200 ml)</li>   
+        <li>1 su bardağı sıcak su (200 ml)</li>
+        <li>1,5 çay bardağı tuz</li>
+        <li>1 çay kaşığı pul biber</li>
+        <li>1 çay kaşığı kimyon</li>
+        <li>1 çay kaşığı karabiber</li>
+        <li>1/2 çay kaşığı toz acı biber</li>
+        <li>1 adet defne yaprağı</li>
+        <li>2 kepçe makarnanın haşlama suyu</li>
+    </ul>
+      <h5>Kıymalı Makarna Tarifi Nasıl Yapılır? </h5>
+      <ol>
+        <li>Kıymalı sos için geniş bir tavaya zeytinyağını alın ve ısındıktan sonra kıymayı ekleyerek kavurmaya başlayın. Kıyma renk alınca mümkün olduğunda küçük küpler halinde doğradığını soğanı ve rendelenmiş sarımsağı ekleyin.</li>
+        <li>3-4 dakika sonra domates salçasını ekleyin ve kıymayla bütünleşene dek karıştırın. 1-2 dakika bu şekilde pişirin.</li>
+        <li>Ardından domates püresini, sıcak suyu, baharatlarını ve tuzunu ekleyip karıştırın. Son olarak defne yaprağını da ekleyin ve kapağını kapatarak kısık ateşe 10 dakika pişmeye bırakın.</li>
+        <li>Sos pişerken spagetti makarnayı paketi üzerinde belirtilen yönlendirmelere göre haşlayın. Haşlama suyunda tercihen 1 silme tatlı kaşığı tuz kullanın. Haşlama suyundan 2 kepçe alarak sosa eklemek üzere kenara ayırın.</li>
+        <li>Sosun kıvamını kontrol ettikten sonra ayırmış olduğunuz 2 kepçe haşlama suyunu ekleyin, hafifçe karıştırın.</li>
+        <li>Haşlayıp süzmüş olduğunuz spagetti makarnayı sosun içerisine alıp güzelce karıştırın. Tavayı ileri geri hareket ettirerek sosa daha iyi bulanmasını sağlayabilirsiniz. Sos ve makarna birleşene dek dikkatlice karıştırarak pişirmeniz yeterli olacaktır.</li>
+        <li>İsteğe göre üzerine olgunlaşmış peynir rendeleyip servis edebilirsiniz, afiyet olsun! :)</li>
+      </ol>
+        <hr class="d-sm-none">
+      </div>
+      <div class="col-sm-4" style="margin-left: 5%;">
+        <h2>Tavuklu Makarna</h2>
+        <div class="fakeimg" style="background-image: url(tavukluMakarna.jpg); background-size: cover;"></div>
+        <p>Hafta sonu o demek!</p>
+        <h4>Tavuklu Makarna Tarifi İçin Malzemeler</h4>
+      <ul><li>1 adet burgu makarna</li>
+        <li>10 su bardağı sıcak su</li>
+        <li>1 çay kaşığı tuz</li>
+    </ul>
+    <h6>Tavuklu harcı için:</h6>
+    <ul>
+        <li>400 gram fileto tavuk göğsü</li>
+        <li>3 adet orta boy domates</li>
+        <li>1 adet orta boy kuru soğan</li>
+        <li>1 diş sarımsak</li>
+        <li>4 yemek kaşığı zeytinyağı</li>
+        <li>1 tatlı kaşığı domates salçası</li>
+        <li>1/4 çay kaşığı toz kırmızı biber</li>
+        <li>1/2 çay kaşığı tuz</li>
+        <li>1/2 çay kaşığı taze çekilmiş tane karabiber</li>
+    </ul>
+      <h5>Tavuklu Makarna Tarifi Nasıl Yapılır? </h5>
+      <ol>
+        <li>Tavuklu makarnanın lezzetini verecek olan tavuklu harcı hazırlamak için; fileto tavuk göğsünü iri parçalar halinde doğrayın.</li>
+        <li>Kuru soğanı küçük parçalar halinde kesin. Sap kısımlarını alıp ortadan ikiye kestiğiniz sulu domatesler ve sarımsağı rendenin ince kısmıyla rendeleyin.</li>
+        <li>Zeytinyağını geniş tabanlı bir tavada kızdırın. Küçük parçalar halinde doğranmış kuru soğan ve rendelenmiş sarımsağı kokusu çıkıp, hafif bir kıvam alana kadar orta ateşte soteleyin.</li>
+        <li>İri parçalar halinde doğradığınız tavuk göğsü parçalarını katıp, yüksek ateşte tavuklar renk alana kadar soteleme işlemini sürdürün.</li>
+        <li>Rendelenmiş domates, domates salçası, toz kırmızı biber, tuz ve taze çekilmiş tane karabiber kattığınız tavuklu sos harcını kısık ateşte kaynamaya bırakın.</li>
+        <li>Makarnayı haşlamak için sıcak suyu derin bir tencerede kaynatın. Tuz ekledikten sonra makarnaları damak tadınıza göre 8-10 dakika kadar haşlayın.</li>
+        <li>Makarnanın haşlama suyundan bir kepçe kadar alıp, kısık ateşte pişmekte olan makarna sosunun kıvamını açın.</li>
+        <li>Haşlanan makarnayı süzdükten sonra durulamadan sos tavasının içine aktarın. Sosuyla ve arzuya göre toz parmesan peyniriyle harmanladığınız tavuklu makarnayı, sıcak olarak bekletmeden servis edin. Sevdiklerinizle paylaşın. :)</li>
+      </ol>
+        <hr class="d-sm-none">
+      </div>
+      
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin: bottom 20px;">
+  <p>Feyza Uğuz</p>
+</div>
+
+</body>
+</html>
